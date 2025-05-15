@@ -25,6 +25,12 @@
                     <span>Produk</span>
                 </a>
             </li><!-- End Produk Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link" href="profile"<?= base_url('profile') ?>"><i class="fas fa-user-circle"><i class="bi bi-person"></i></i> Profil</a>
+            </li>
+            </ul><!-- End Profile Nav -->
+
         <?php
         }
         ?>
