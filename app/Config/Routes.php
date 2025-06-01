@@ -22,3 +22,5 @@ $routes->group('produk', ['filter' => 'auth'], function ($routes) {
 $routes->get('keranjang', 'TransaksiController::index', ['filter' => 'auth']);
 
 $routes->get('profil', 'ProfilController::index', ['filter' => 'auth']);
+$routes->get('profile', 'ProfilController::index', ['filter' => 'auth']);
+

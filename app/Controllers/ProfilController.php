@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 
-class Profile extends Controller
+class ProfilController extends Controller
 {
     public function index()
     {
@@ -16,6 +16,6 @@ class Profile extends Controller
             'login_time' => $session->get('login_time'),
             'status' => $session->get('logged_in') ? 'Aktif' : 'Tidak Aktif'
         ];
-        return view('profile', $data);
+        return view('profil', $data);
     }
 }
