@@ -10,12 +10,13 @@ class ProfilController extends Controller
     {
         $session = session();
         $data = [
-            'username' => $session->get('username'),
-            'role' => $session->get('role'),
-            'email' => $session->get('email'),
+            'username'   => $session->get('username'),
+            'role'       => $session->get('role'),
+            'email'      => $session->get('email'),
             'login_time' => $session->get('login_time'),
-            'status' => $session->get('logged_in') ? 'Aktif' : 'Tidak Aktif'
+            'status'     => $session->get('isLoggedIn') ? 'Aktif' : 'Tidak Aktif',
         ];
+
         return view('profil', $data);
     }
 }

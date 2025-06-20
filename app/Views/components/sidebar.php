@@ -27,9 +27,11 @@
             </li><!-- End Produk Nav -->
 
             <li class="nav-item">
-                <a class="nav-link" href="profile"<?= base_url('profile') ?>"><i class="fas fa-user-circle"><i class="bi bi-person"></i></i> Profil</a>
-            </li>
-            </ul><!-- End Profile Nav -->
+                    <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
+            <i class="bi bi-person"></i>
+                <span>Profile</span>
+                    </a>
+            </li><!-- End Profile Nav -->
 
         <?php
         }
